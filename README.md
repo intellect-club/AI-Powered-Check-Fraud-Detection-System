@@ -80,3 +80,10 @@ Machine Learning Models:
 - Improved Security: Integrate two-factor authentication (2FA) for additional security during confirmation.
 - Real-Time Notifications: Expand the email notification system to include SMS alerts.
 - User-Friendly Interface: Build a graphical user interface (GUI) for easier usage.
+
+## Results
+
+![alt text](https://github.com/intellect-club/AI-Powered-Check-Fraud-Detection-System/blob/main/examples/test1%20-%20signature.jpg)
+signature segmentation
+![alt text](https://github.com/intellect-club/AI-Powered-Check-Fraud-Detection-System/blob/main/examples/test1%20-%20text.jpg?raw=true)
+text segmentation
