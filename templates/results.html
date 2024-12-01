@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">
+                {% if status == 'success' %}
+                    <span class="has-text-success">The check is genuine</span>
+                {% else %}
+                    <span class="has-text-danger">The check is fraudulent</span>
+                {% endif %}
+            </h1>
+        </div>
+    </section>
+</body>
+</html>

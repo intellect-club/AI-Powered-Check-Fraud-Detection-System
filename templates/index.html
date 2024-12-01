@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Upload File</h1>
+            <form method="post" enctype="multipart/form-data" class="box">
+    <div class="file has-name is-centered">
+        <label class="file-label">
+            <input class="file-input" type="file" name="file_input" accept="*/*" required>
+            <span class="file-cta">
+                <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">Choose a file...</span>
+            </span>
+            <span class="file-name" id="file-name">No file selected</span>
+        </label>
+    </div>
+    <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+            <button class="button is-primary" type="submit">Submit</button>
+        </p>
+    </div>
+</form>
+
+        </div>
+    </section>
+    <script>
+    document.querySelector('.file-input').addEventListener('change', function() {
+        const fileName = this.files[0]?.name || 'No file selected';
+        document.getElementById('file-name').textContent = fileName;
+    });
+</script>
+
+</body>
+</html>
