@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did You Sign the Check?</title>
+    <style>
+        /* General reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Question text */
+        .question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Button styles */
+        .btn {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .btn.no {
+            background: #dc3545;
+        }
+
+        .btn.no:hover {
+            background: #a71d2a;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .question {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question">Did you sign the check?</div>
+        <button class="btn yes" onclick="handleResponse('yes')">YES</button>
+        <button class="btn no" onclick="handleResponse('no')">NO</button>
+    </div>
+
+    <script>
+        // Handle button click response
+        function handleResponse(response) {
+            if (response === 'yes') {
+                alert("You answered YES!");
+            } else {
+                alert("You answered NO!");
+            }
+            // Add custom actions here, such as redirecting to another page
+        }
+    </script>
+</body>
+</html>
